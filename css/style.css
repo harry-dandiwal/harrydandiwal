@@ -1,0 +1,231 @@
+/*This targets the ul tag which is a child of
+nav element and applies the following styling.
+background image sets the backgorund to a linear gradient backgorunf*/
+nav>ul{
+    border-style: outset; border-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around; 
+    list-style-type:none;
+    margin: auto;
+    padding: 10px 10px;
+    background-image: linear-gradient(to right, rgb(235, 21, 21), rgb(102, 75, 75)); 
+}
+/*targets a element with color and padding. Sets list to no decoration*/
+a{
+    color: white;
+    padding-left: 5px; padding-right: 5px;
+    text-decoration: none;
+    font-family: fantasy; font-size: 30px;
+}
+/*This styles the cursor and the text when the mouse cursor is hovered over
+It would increase the size of text, change the color and the pointer. Further applies a shadow*/
+a:hover{
+    font-size: 250%;
+    color: white;
+    cursor: pointer;
+    text-shadow: 7px 3px 3px rgb(212, 222, 235);
+    
+}
+/*Makes a grid with 2 cols of auto width*/
+#div1{
+    display: grid;
+    grid-template-columns: auto auto;  
+}
+/*styles p within the div1*/
+#div1>p{
+    border: 2px solid black;
+    font-family:cursive;
+    border-radius: 34%;
+    font-size: 120%; 
+    line-height: 120%;
+    background-color: rgb(212, 222, 235);
+    padding: 6%;
+    margin:auto; margin-right: 5%;
+/*Targets img in div1 with respective properties*/
+}
+#div1>img{
+    border: 2px solid black;
+    height: 100%; width: 95%;
+    border-radius: 40%; 
+}
+/*Styles div 2 with a frid of 2 cols of auto width*/
+#div2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    text-align: center;
+}
+/*Targets ul of div2 with certain font and color properties and does some alignments*/
+#div2>ul{
+    border: 2px solid black;
+    font-family:cursive;
+    list-style: none;
+    font-size: 120%; 
+    line-height: 120%;
+    padding: 7%;
+    background-color: rgb(212, 222, 235);
+    border-radius: 40%;
+    margin:auto;
+    list-style:square; 
+    text-align: left;
+}
+/*div3 of index with a frid of 2 cols*/
+#div3{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;   
+}
+/*p of div3 which sets the border font padding etc*/
+#div3>p{
+    border: 2px solid black;
+    font-family:cursive;
+    list-style: none;
+    font-size: 120%; 
+    line-height: 120%;
+    padding:1%;
+    background-color: rgb(212, 222, 235);
+    border-radius: 25%;
+    margin:auto
+}
+/*targets ul in footer with a border apdding and builds a flex with a style type set to none. Adds a linear gradient color*/
+footer>ul{
+    border-style: outset; border-color: white;
+    padding: 0;
+    display: flex;   
+    flex-direction: column;
+    align-items:center;
+    list-style: none;
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(235, 21, 21), rgb(102, 75, 75)); 
+    color: white;
+}
+/*makes a grid with 4 rows and aligns text to center, font to cursive and change fontsize*/
+.resume{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    font-family:cursive;
+    font-size: 120%; 
+    line-height: 120%;
+}
+/*makes another frid of 2 cols with a 5 % gap in them*/
+#skills{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+    margin: auto;
+}
+/*sets a border around ul of skils and some other margin and padding changes with color*/
+#skills>ul{
+    border: 2px solid black;
+    grid-template-columns: auto auto;
+    background-color: rgb(212, 222, 235);
+    border-radius: 25%;
+    padding: 6%;
+}
+/*targets id edu and goals of class resume with some border color margin radius and padding styles*/ 
+.resume>#edu{
+    border: 2px solid black;
+    background-color: rgb(212, 222, 235);
+    margin: auto;
+    border-radius: 25%;
+    padding: 1%;
+    
+}
+/*adds color to the spanned text*/
+span{
+    color: red;
+}
+/*targets ul of skills. And li which is child of ul child of another li child of another ul with following properties*/
+#skills>ul, #skills>ul>li>ul>li{
+    list-style:square; 
+    text-align: left;
+}
+/*styles all h1 and h3 with different font and color and some other properties*/
+h1,h3{
+    color: #333;
+    text-align: center;
+    font-family: cursive;   
+    border: 2px solid black;
+    background-color: rgb(212, 222, 235);
+    border-radius: 22%;
+}
+/*styles h2 */
+h2{
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(235, 21, 21), rgb(102, 75, 75)); 
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    color: white;
+    border-radius: 20%;
+    
+}
+/*styles the clickhere text which is a link to college page with differnt color and text*/
+p>#clickhere{
+    color: red;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+/*changes size of font when hovrered over and underlines it*/
+#clickhere:hover{
+    font-size: 120%;
+    text-decoration: underline;
+}
+/*styles element with id container with following properties*/
+.container{
+    font-family: cursive;
+    font-size: 120%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-gap: 20px;
+    padding: 10px;
+    }
+/*targets rows of table*/
+tr>td{
+    border: 2px solid black;
+    background-color: rgb(212, 222, 235);
+    }
+
+/*targets header of the table*/
+tr>th{
+    padding: 7px;
+    background-image: linear-gradient(to right, rgb(235, 21, 21), rgb(102, 75, 75)); 
+    color: white;
+    letter-spacing: 3px;
+    font-size: 120%;
+    border-radius: 20%;
+    }
+tr.data>td{
+    text-align: left;
+    background-color: rgb(212, 222, 235) ;
+}
+/*sets the height of all the images in the courses*/
+#courses img{
+    height: 300px; width: 250px;
+    }
+/*styles fieldset which is the sidebar of page*/
+fieldset{ 
+    background-color: rgb(212, 222, 235);
+    color: black;
+    font-family: cursive;
+    letter-spacing: 3px;
+    border: 2px solid black;
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
